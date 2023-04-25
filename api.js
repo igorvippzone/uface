@@ -19,7 +19,7 @@ router.get("/setQRCodeCallback/:ip", (req, res) => {
 
   axios
     .post(
-      `http://${deviceIP}:8090/device/setQRCodeCallback?${query}/api/device/recognition/callback/qr`
+      `http://${deviceIP}:8090/device/setQRCodeCallback?${query}/recognition/callback/qr`
     )
     .then((result) => console.log("qr-post ", result.data));
 });
